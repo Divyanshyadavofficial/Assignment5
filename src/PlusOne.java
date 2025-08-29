@@ -1,8 +1,13 @@
+import java.util.Arrays;
+
+import static java.lang.System.*;
+
 public class PlusOne {
     public static void main(String[] args) {
-
+        int[]digits = {1,2,3};
+        System.out.println(Arrays.toString(plus(digits)));
     }
-    public int[] plus(int[] digits){
+    public static int[] plus(int[] digits){
         for (int i = digits.length-1; i >=0 ; i--) {
             if(digits[i]==9){
                 digits[i]=0;
